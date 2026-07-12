@@ -1,0 +1,61 @@
+/* =========================================================
+   NutriQuest — responsive.css
+   ========================================================= */
+
+/* --- Tablet --- */
+@media (max-width: 1024px) {
+  .world-grid { grid-template-columns: repeat(2, 1fr); }
+  .item-grid { grid-template-columns: repeat(auto-fill, minmax(130px,1fr)); }
+  .enc-grid { grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); }
+}
+
+/* --- Mobile --- */
+@media (max-width: 640px) {
+  #hud { padding: 8px 10px; gap: 8px; }
+  .hud-avatar { width: 38px; height: 38px; font-size: 19px; }
+  .hud-identity { min-width: 70px; }
+  .hud-name { font-size: 0.72rem; }
+  .hud-level { font-size: 0.65rem; }
+  .hud-xp-track { flex-basis: 70px; }
+  .hud-coins, .hud-menu-btn { font-size: 0.72rem; padding: 5px 8px; }
+
+  #screen { padding: 10px; }
+  .panel { padding: 14px; border-radius: var(--radius-md); }
+  .screen-title { font-size: 1.25rem; }
+
+  .world-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .world-node { min-height: 118px; padding: 12px 8px 10px; }
+  .world-node .w-emoji { font-size: 1.6rem; }
+  .world-node .w-name { font-size: 0.78rem; }
+
+  .level-node { width: 62px; height: 62px; }
+  .level-node .lv-emoji { font-size: 1.1rem; }
+  .level-node .lv-stars { font-size: 0.55rem; }
+
+  .concept-icon-lg { font-size: 3.2rem; }
+  .concept-name { font-size: 1.4rem; }
+
+  .scroll { padding: 18px 16px; }
+  .scroll-text { font-size: 0.92rem; }
+
+  .mg-match-grid { grid-template-columns: 1fr; gap: 10px; }
+  .results-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .results-stars { font-size: 1.9rem; }
+
+  .item-grid { grid-template-columns: repeat(2, 1fr); }
+  .enc-grid { grid-template-columns: 1fr; }
+  .ach-grid { grid-template-columns: 1fr; }
+
+  .modal-box { padding: 18px; }
+
+  #footer-nav { gap: 4px; padding: 8px 6px; }
+  #footer-nav .nav-btn { font-size: 0.68rem; padding: 7px 9px; }
+
+  .tabs { gap: 5px; }
+  .tab-btn { padding: 7px 12px; font-size: 0.8rem; }
+}
+
+@media (max-width: 380px) {
+  .world-grid { grid-template-columns: 1fr; }
+  .results-grid { grid-template-columns: 1fr; }
+}
